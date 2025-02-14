@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - Quick Cart</title>
+    <style>
+        /* Add these styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .navbar-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            margin: 10px;
+        }
+        .footer-section h3 {
+            color: #fff;
+        }
+        .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-section a:hover {
+            color: #fff;
+        }
+        /* Add styles for the buy now button */
+        .buy-now {
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .buy-now:hover {
+            background-color: rgb(53, 124, 148);
+        }
+        /* Styles for the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Quick Cart</a>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Categories</a>
+                <div class="dropdown-content">
+                    <a href="watch.html">Watches</a>
+                    <a href="phone.html">Phones</a>
+                    <a href="laptop.html">Laptops</a>
+                    <a href="pc.html">PCs</a>
+                    <a href="#">Accessories</a>
+                </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Watches</h1>
+        <div class="product-grid">
+            <!-- First row of products -->
+            <div class="product">
+                <img src="img/watch/watch 1.png" alt="Watch 1">
+                <h3>Smart Watch</h3>
+                <p>$19.99</p>
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20the%20Smart%20Watch" class="buy-now" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="img/watch/watch 3.png" alt="Watch 2">
+                <h3>Y10 Ultra Smart Watch</h3>
+                <p>$14.99</p>
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20the%20Y10%20Ultra%20Smart%20Watch" class="buy-now" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="img/watch/watch 4.png" alt="Watch 3">
+                <h3>GTab w101 Smart Watch</h3>
+                <p>$29.99</p>
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20the%20GTab%20w101%20Smart%20Watch" class="buy-now" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="img/watch/watch 2.png" alt="Watch 4">
+                <h3>Apple Watch series 1</h3>
+                <p>$74.99</p>
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20the%20Apple%20Watch%20series%201" class="buy-now" target="_blank">Buy Now</a>
+            </div>
+            <!-- Second row of products -->
+            <div class="product">
+                <img src="img/watch/watch 5.png" alt="Watch 5">
+                <h3>Casio G-shock Analog</h3>
+                <p>$174</p>
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20the%20Casio%20G-shock%20Analog" class="buy-now" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="img/watch/watch 6.png" alt="Watch 6">
+                <h3>Casio Android Smart Watch</h3>
+                <p>$44.99</p>
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20the%20Casio%20Android%20Smart%20Watch" class="buy-now" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="img/watch/watch 7.png" alt="Watch 7">
+                <h3>Amazfit Stratos</h3>
+                <p>$79.99</p>
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20the%20Amazfit%20Stratos" class="buy-now" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="img/watch/watch 8.png" alt="Watch 8">
+                <h3>Samsung Gear S3 Smart Watch</h3>
+                <p>$84.99</p>
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20the%20Samsung%20Gear%20S3%20Smart%20Watch" class="buy-now" target="_blank">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a><br>
+                <a href="#">Categories</a><br>
+                <a href="about.html">About</a><br>
+                <a href="login.html">Login</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: shayankhan80323@gmail.com</p>
+                <p>Phone: (+92) 325-9927822</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <p>&copy; 2023 Quick Cart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
